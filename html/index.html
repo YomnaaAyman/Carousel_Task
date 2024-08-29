@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/index.js" defer></script>
+    <title>Images Carousel</title>
+  </head>
+  <body class="flex itms-center justify-center h-screen bg-pink-200">
+    <div class="relative w-full rounded-lg shadow-lg m-20">
+      <div
+        class="flex transition-tranfoem duartion-5oo ease-in-out"
+        id="carousel-inner"
+      >
+        <div class="w-full flex-shrink-0">
+          <img src="../images/blueberry.jpg" alt="blueberry" class="w-full" />
+        </div>
+        <div class="w-full flex-shrink-0">
+          <img src="../images/cherry.jpg" alt="cherry" class="w-full" />
+        </div>
+        <div class="w-full flex-shrink-0">
+          <img src="../images/kiwi.jpg" alt="kiwi" class="w-full" />
+        </div>
+      </div>
+      <button
+        class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        onclick="prevSlide()"
+      >
+        &#10094;
+      </button>
+      <button
+        class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+        onclick="nextSlide()"
+      >
+        &#10095;
+      </button>
+    </div>
+  </body>
+</html>
